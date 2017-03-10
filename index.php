@@ -22,7 +22,17 @@
 	        <div class="header-wrap">
 	        <div class="home-info-container">
 	            <a href="<?php $this->options->siteUrl(); ?>"><h2>Stay before every beautiful thoughts</h2></a>
-	            <h4>在每一个美好的思想前停留</h4>
+	            <h4>
+                    <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+                    <?php while($pages->next()): ?>
+
+                    <a style="color:#fff" <?php if($this->is('page', $pages->slug)): ?><?php endif; ?> href="<?php $pages->permalink(); ?>">
+                    	<?php $pages->title(); ?>
+                    </a>
+                    <?php endwhile; ?>
+                    <a style="color:#fff" href="https://www.bayun.org" target="_blank">八云酱</a>
+                    <a style="color:#fff" href="https://zhuanlan.zhihu.com/bayun" target="_blank">知乎专栏</a>
+				</h4>
 	        </div>
 	        <div class="arrow_down" data-offset="-45">
 	               <a href="javascript:;"></a>
