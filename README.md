@@ -52,6 +52,12 @@
 
 [GitHub地址](https://github.com/ryanwschina/Yakumo)
 
+使用主题请保留主题页脚本站八云酱链接（只保留一个链接即可），谢谢。
+
 因为目前刚刚写完，可能会有一些错误，所以邀请大家加入[八云酱QQ群386439328](https://shang.qq.com/wpa/qunwpa?idkey=0e6fd03688f9a871e30acce7c2e11ba2c486dbe6f768cac73e61b43495dd2d92)反馈信息。
 
-![Yakumo 八云酱出品](https://cdn.bayun.org/image/yakumo-five.jpg)
+[![Yakumo 八云酱出品](https://cdn.bayun.org/image/yakumo-five.jpg)](https://cdn.bayun.org/image/yakumo-five.jpg)
+
+[![Yakumo 八云酱出品](https://cdn.bayun.org/image/yakumo-six.jpg)](https://cdn.bayun.org/image/yakumo-six.jpg)
+
+[![Yakumo 八云酱出品](https://cdn.bayun.org/image/yakumo-seven.jpg)](https://cdn.bayun.org/image/yakumo-seven.jpg)
