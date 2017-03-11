@@ -42,7 +42,7 @@
                             <div class="post-meta">
                                 <span class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}"><?php $this->date('d M Y'); ?></time></span>
                                 <span class="post-tags">
-                                    <?php $this->tags(' ', true, '博主太懒'); ?>
+                                    <?php $this->tags(' ', true, ''); ?>
                                 </span>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                                 <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
                                 <p class="post-short-intro"><?php $this->description(); ?></p>
                                 <span class="post-tags">
-                                    <?php $this->tags(' ', true, '博主太懒'); ?>
+                                    <?php $this->tags(' ', true, ''); ?>
                                 </span>
                                 <a href="<?php $this->permalink() ?>" class="btn-post-excerpt">阅读原文</a>
                             </div>

@@ -16,7 +16,7 @@
 	            <time class="post-page-time"><?php $this->date('d M Y'); ?></time>
 	            <span class="post-page-author"><?php $this->author(); ?></span>
                 <span class="post-page-tags">
-                    <?php $this->tags(' ', true, '博主太懒'); ?>
+                    <?php $this->tags(' ', true, ''); ?>
                	</span>
            	</div>
         </div>
@@ -31,7 +31,7 @@
 	     		<div class="single-post-inner">
 	        		<?php $this->content(); ?>
 	       			<div class="tag-box">
-	          			<?php $this->tags(' ', true, '博主太懒'); ?>
+	          			<?php $this->tags(' ', true, ''); ?>
 	        		</div>
 			        <div class="money-like" id="like-money">
 			            <div class="reward-button">赏

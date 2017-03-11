@@ -31,7 +31,6 @@
                     </a>
                     <?php endwhile; ?>
                     <a style="color:#fff" href="https://www.bayun.org" target="_blank">八云酱</a>
-                    <a style="color:#fff" href="https://zhuanlan.zhihu.com/bayun" target="_blank">知乎专栏</a>
 				</h4>
 	        </div>
 	        <div class="arrow_down" data-offset="-45">
@@ -56,7 +55,7 @@
 							<div class="post-meta">
 								<span class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}"><?php $this->date('d M Y'); ?></time></span>
 								<span class="post-tags">
-									<?php $this->tags(' ', true, '博主太懒'); ?>
+									<?php $this->tags(' ', true, ''); ?>
 								</span>
 							</div>
 						</div>
@@ -72,7 +71,7 @@
 					            <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
 					            <p class="post-short-intro"><?php $this->description(); ?></p>
 					            <span class="post-tags">
-					           		<?php $this->tags(' ', true, '博主太懒'); ?>
+					           		<?php $this->tags(' ', true, ''); ?>
 					            </span>
 					            <a href="<?php $this->permalink() ?>" class="btn-post-excerpt">阅读原文</a>
 					        </div>
