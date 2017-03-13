@@ -51,9 +51,16 @@
 				    </a>
 				    <div class="info-mask">
 						<div class="mask-wrapper">
-							<h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+							<h2 class="post-title">
+								<a href="<?php $this->permalink() ?>">
+									<?php $this->title() ?>
+								</a>
+								<span style="font-size: 1.6rem">
+									<?php $this->viewsNum(); ?>
+								</span>
+							</h2>
 							<div class="post-meta">
-								<span class="post-time"><time datetime="{{date format='YYYY-MM-DD'}}"><?php $this->date('d M Y'); ?></time></span>
+								<span class="post-time"><?php $this->date('d M Y'); ?></span>
 								<span class="post-tags">
 									<?php $this->tags(' ', true, ''); ?>
 								</span>
@@ -68,7 +75,11 @@
 			    		<div class="excert-detail-container">
 					        <div class="post-meta">
 					            <span class="post-time"><time><?php $this->date('d M Y'); ?></time></span>
-					            <h2 class="post-title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+					            <h2 class="post-title">
+					            	<a href="<?php $this->permalink() ?>">
+					            		<?php $this->title() ?>
+					            	</a>
+					            </h2>
 					            <p class="post-short-intro"><?php $this->description(); ?></p>
 					            <span class="post-tags">
 					           		<?php $this->tags(' ', true, ''); ?>

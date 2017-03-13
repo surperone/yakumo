@@ -48,6 +48,10 @@
 
 博主自己开发的网站地图插件也推荐给大家使用，具体细节访问[Typecho博客sitemap.xml](https://www.bayun.org/typecho-sitemap/)查看。
 
+## 文章浏览数
+
+主题获取文章阅览数需要插件支持，请将plugins目录下面的插件拷贝到Typecho博客插件目录/usr/plugins里面并在后台进行开启。
+
 ## 主题获取
 
 [GitHub地址](https://github.com/ryanwschina/Yakumo)

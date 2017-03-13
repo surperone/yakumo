@@ -11,7 +11,7 @@
         <div class="header-wrap" >
             <div class="post-info-container">
                 <h2 class="post-page-title ">
-                	<?php $this->title() ?>
+                	<?php $this->title() ?>              	
             	</h2>
 	            <time class="post-page-time"><?php $this->date('d M Y'); ?></time>
 	            <span class="post-page-author"><?php $this->author(); ?></span>
