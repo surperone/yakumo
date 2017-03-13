@@ -14,13 +14,13 @@
 
 多说评论框头像一直没法使用HTTPS传输，所以HTTPS网站经常会碰到因为图片加载方式为HTTP而出现网站不可信的情况。Yakumo主题自带/js/embed.js文件已经实现HTTPS反向代理，默认已经解决这个问题。所以使用时，只要去多说注册一下，然后修改主题comments.php文件里面多说子域名即可。
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/one.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/one.jpg)
 
 ## fancybox
 
 主题已经集成fancybox功能，点击图片可以放大查看，并且可以用通过鼠标和键盘方向键浏览文章所有图片。
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/two.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/two.jpg)
 
 在后台MarkDown编辑的时候注意不能简单地用图片形式插入，需要在图片外再加一层链接，比如像下面这样。
 
@@ -36,13 +36,13 @@
 
 写文章时在输入框最下面添加自定义字段cover，字段内容为图片链接。
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/three.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/three.jpg)
 
 ## 标签云
 
 底部标签云默认会生成最多50个标签，如果需要修改标签数量，请修改index.php文件和archive.php文件内如下位置。
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/four.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/four.jpg)
 
 ## 网站地图
 
@@ -56,8 +56,34 @@
 
 因为目前刚刚写完，可能会有一些错误，所以邀请大家加入[八云酱QQ群386439328](https://shang.qq.com/wpa/qunwpa?idkey=0e6fd03688f9a871e30acce7c2e11ba2c486dbe6f768cac73e61b43495dd2d92)反馈信息。
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/five.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/five.jpg)
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/six.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/six.jpg)
 
-![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/raw/master/seven.jpg)
+![Yakumo 八云酱出品](https://github.com/ryanwschina/Yakumo/README/raw/master/seven.jpg)
+
+## Copyright & License
+
+Copyright (c) 2013-2017 Ghost Foundation
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
