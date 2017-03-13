@@ -46,7 +46,7 @@
 
 ## 网站地图
 
-博主自己开发的网站地图插件也推荐给大家使用，具体细节访问[Typecho博客sitemap.xml生成器](https://www.bayun.org/typecho-sitemap/)查看。
+博主自己开发的网站地图插件也推荐给大家使用，具体细节访问[Typecho博客sitemap.xml](https://www.bayun.org/typecho-sitemap/)查看。
 
 ## 主题获取
 
