@@ -20,3 +20,29 @@
     font-weight: 400;
     src: local('Exo Regular'), local('Exo-Regular'), url(/usr/themes/Yakumo/fonts/Regular.woff) format('woff');
 }
+
+.iconfont-google:before { content: "\e713"; }
+
+.iconfont-weibo:before { content: "\e712"; }
+
+.iconfont-douban:before { content: "\e711"; }
+
+.iconfont-github:before { content: "\e710"; }
+
+.iconfont-instagram:before { content: "\e709"; }
+
+.iconfont-facebook:before { content: "\e708"; }
+
+.iconfont-qzone:before { content: "\e707"; }
+
+.iconfont-wikipedia:before { content: "\e706"; }
+
+.iconfont-wechat:before { content: "\e705"; }
+
+.iconfont-zhihu:before { content: "\e704"; }
+
+.iconfont-dribbble:before { content: "\e703"; }
+
+.iconfont-bayun:before { content: "\e702"; }
+
+.iconfont-twitter:before { content: "\e701"; }

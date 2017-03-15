@@ -1409,7 +1409,8 @@ to {
 }
 .read-next-story .post {
 	padding:4rem 3rem;
-	background:0 0
+	background:0 0;
+	width:100%;
 }
 .read-next-story h2 {
 	position:relative;
@@ -1463,8 +1464,8 @@ to {
 .iconfont.undefined {
 	display:none!important
 }
-.iconfont-self {
-	color:red
+.iconfont-bayun {
+	color:#176dee
 }
 .iconfont-weibo {
 	color:#e6162d
@@ -1485,12 +1486,15 @@ to {
 	color:#75d140
 }
 .iconfont-qzone {
-	color:#186cc6
+	color:#ffc20e
+}
+.iconfont-github {
+	color:#333
 }
 .iconfont-douban {
 	color:#279337
 }
-.iconfont-dribble {
+.iconfont-dribbble {
 	color:#f72d84
 }
 .iconfont-zhihu {
@@ -1499,66 +1503,33 @@ to {
 .iconfont-instagram {
 	color:#9b6954
 }
-.icon-weibo-pure {
-	color:#e6162d
-}
-.icon-twitter-pure {
-	color:#2aa9e0
-}
-.icon-github-pure {
-	color:#333
-}
-.icon-dribble-pure {
-	color:#f72d84
-}
-.icon-weixin-pure {
-	color:#75d140
-}
-.iconfont-jianshu {
-	color:#e78170
-}
-.iconfont-youku {
-	color:#06a7e1
-}
-.iconfont-youtube {
-	color:#e52413
-}
-.single-post-inner .iconfont-local:before {
-	content:'\0f00ac'
-}
-.single-post-inner .iconfont-twitter:before {
-	content:'\00e604'
-}
-.single-post-inner .iconfont-wechat:before {
-	content:'\00e606'
-}
-.single-post-inner .iconfont-weibo:before {
-	content:'\00e607'
-}
-.single-post-inner .iconfont-facebook:before {
-	content:'\00e601'
-}
-.single-post-inner .iconfont-google:before {
-	content:'\00e602'
-}
-.single-post-inner .iconfont-douban:before {
-	content:'\0e600'
-}
-.single-post-inner .iconfont-zhihu:before {
-	content:'\00e609'
-}
-.single-post-inner .iconfont-wikipedia:before {
-	content:'\00e608'
-}
-.single-post-inner .iconfont-jianshu:before {
-	content:'\00e60b'
-}
-.single-post-inner .iconfont-youku:before {
-	content:'\00e60c'
-}
-.single-post-inner .iconfont-youtube:before {
-	content:'\00e60a'
-}
+
+.single-post-inner .iconfont-google:before { content: "\e713"; }
+
+.single-post-inner .iconfont-weibo:before { content: "\e712"; }
+
+.single-post-inner .iconfont-douban:before { content: "\e711"; }
+
+.single-post-inner .iconfont-github:before { content: "\e710"; }
+
+.single-post-inner .iconfont-instagram:before { content: "\e709"; }
+
+.single-post-inner .iconfont-facebook:before { content: "\e708"; }
+
+.single-post-inner .iconfont-qzone:before { content: "\e707"; }
+
+.single-post-inner .iconfont-wikipedia:before { content: "\e706"; }
+
+.single-post-inner .iconfont-wechat:before { content: "\e705"; }
+
+.single-post-inner .iconfont-zhihu:before { content: "\e704"; }
+
+.single-post-inner .iconfont-dribbble:before { content: "\e703"; }
+
+.single-post-inner .iconfont-bayun:before { content: "\e702"; }
+
+.single-post-inner .iconfont-twitter:before { content: "\e701"; }
+
 .yasuko-only #ds-reset .ds-avatar img {
 	width:54px;
 	height:54px;
@@ -1892,8 +1863,4 @@ to {
 }
 .all-tags-block {
 	margin: 2rem
-}
-ol li{
-	display: inline !important;
-	margin:0 .5rem;
 }

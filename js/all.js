@@ -23,6 +23,7 @@ function loadJS(A, e, t) {
 $.fn.extend({
     isOnScreenVisible: function() {
         if (!$("body").hasClass("post-template")) return ! 1;
+        if ($("body").hasClass("page-template")) return ! 1;
         var A = $(window),
         e = {
             top: A.scrollTop(),
@@ -52,7 +53,7 @@ General = {
         General.webFontLoader(),
         General.scrollToPos(),
         General.arrowEvent(),
-        auhtor()
+        General.addIcons()
     },
     updateImageWidth: function() {
         function A() {
@@ -121,11 +122,14 @@ General = {
             qzone: o + "-qzone",
             weibo: o + "-weibo",
             facebook: o + "-facebook",
+            github: o + "-github",
             douban: o + "-douban",
             google: o + "-google",
-            dribble: o + "-dribble",
+            dribbble: o + "-dribbble",
             zhihu: o + "-zhihu",
             wikipedia: o + "-wikipedia",
+            bayun: o + "-bayun",
+            instagram: o + "-instagram"
         };
         for (var i in a) if ("function" != typeof a[i]) {
             var r = i;
@@ -154,7 +158,14 @@ General = {
         })
     },
     rewardLoader: function() {
+        var A = {
+            alipay: "/assets/images/qr-alipay-256.png",
+            wechat: "/assets/images/qr-wechat-256.png"
+        };
+        General.isWechat && $(".wechat-code b").html("长按上方二维码打赏作者"),
         $(".money-like .reward-button").hover(function() {
+            $("img.wechat-img").attr("src", A.wechat),
+            $("img.alipay-img").attr("src", A.alipay),
             $(".money-code").fadeIn(),
             $(this).addClass("active")
         },
@@ -162,7 +173,10 @@ General = {
             $(".money-code").fadeOut(),
             $(this).removeClass("active")
         },
-        800)
+        800),
+        $(".money-like .reward-button").click(function() {
+            $(this).hasClass("active") ? ($(this).find("img.wechat-img").attr("src", A.wechat), $(this).find("img.alipay-img").attr("src", A.alipay), $(".money-code").fadeOut(), $(this).removeClass("active")) : ($(".money-code").fadeIn(), $(this).addClass("active"))
+        })
     }
 }
 
