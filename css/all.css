@@ -1851,6 +1851,10 @@ to {
 	left:0
 }
 }
+ol li {
+	display: inline !important;
+	margin:0 .5rem;
+}
 .all-tags {
 	margin-left: .6rem;
     border-radius: .3rem;
