@@ -1,4 +1,4 @@
-主题最初源自[晒妻狂魔罗磊](https://luolei.org)先生的博客主题Yasuko，博主本人在使用Ghost之后一直使用这款主题，自己增删一些功能改名叫做[八云酱主题](https://www.bayun.org/bayun-theme)。
+主题最初源自[晒妻狂魔罗磊](https://luolei.org)先生的博客主题Yasuko，博主本人在使用Ghost之后一直使用这款主题，自己增删一些功能改名叫做[八云酱主题](http://www.bayun.org/bayun-theme)。
 
 现在又在八云酱主题的基础上，将主题移植到Typecho平台，取名为Yakumo（“八云”日语）。两个版本功能暂时相差无几。因为博主个人PHP水平比Node.js稍好一点，同时Typecho也比Ghost开发方便得多，所以之后Typecho版本主题功能肯定会比Ghost版本多一些。甚至博主自己可能会将博客从Ghost平台转移到Typecho平台。
 
@@ -46,7 +46,7 @@
 
 ## 网站地图
 
-博主自己开发的网站地图插件也推荐给大家使用，具体细节访问[Typecho博客sitemap.xml](https://www.bayun.org/typecho-sitemap/)查看。
+博主自己开发的网站地图插件也推荐给大家使用，具体细节访问[Typecho博客sitemap.xml](http://www.bayun.org/typecho-sitemap/)查看。
 
 ## 文章浏览数
 
