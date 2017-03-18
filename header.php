@@ -20,7 +20,6 @@
             'author'    =>  _t('作者「%s」')
         ), '', ' '); ?><?php $this->options->title(); ?></title>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/all.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/rainbow.css'); ?>">
     <style type="text/css">
         @font-face {
             font-family: 'Exo';
