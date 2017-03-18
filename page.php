@@ -2,7 +2,7 @@
 
 <body class="post-template">
 
-	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url(<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>)">		
+	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "https://cdn.bayun.org/yakumo/header.jpg";} ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url()">		
     	<div class="nav-header">
             <div class="nav-header-container">
                  <a href="<?php $this->options->siteUrl(); ?>" class="back-home">首页</a>
@@ -74,8 +74,6 @@
 
 	<!-- fancybox -->
 	<script>
-	    $("main img").parent("a").addClass("fancybox");
-	    $("main img").parent("a").attr("rel","gallery-group");
 	    $(document).ready(function() {
 	        $('.fancybox').fancybox();
 	    });

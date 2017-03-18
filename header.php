@@ -26,14 +26,14 @@
             font-family: 'Exo';
             font-style: normal;
             font-weight: 100;
-            src: local('Exo Thin'), local('Exo-Thin'), url(/usr/themes/Yakumo/fonts/Thin.woff) format('woff');
+            src: local('Exo Thin'), local('Exo-Thin'), url(<?php $this->options->themeUrl('fonts/Thin.woff'); ?>) format('woff');
         }
 
         @font-face {
             font-family: 'Exo';
             font-style: normal;
             font-weight: 400;
-            src: local('Exo Regular'), local('Exo-Regular'), url(/usr/themes/Yakumo/fonts/Regular.woff) format('woff');
+            src: local('Exo Regular'), local('Exo-Regular'), url(<?php $this->options->themeUrl('fonts/Regular.woff'); ?>) format('woff');
         }
     </style>
     <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.js'); ?>"></script>

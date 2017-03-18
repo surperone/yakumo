@@ -2,7 +2,7 @@
 
 <body class="tag-template">
 
-    <header id="header" data-url="<?php $this->options->themeUrl('img/header.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url(<?php $this->options->themeUrl('img/header.jpg'); ?>)">
+    <header id="header" data-url="https://cdn.bayun.org/yakumo/header.jpg" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url()">
             <div class="nav-header-container">
                 <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
                     <span class="svg-logo"> 
@@ -33,7 +33,7 @@
                 <section class="post-excerpt">
                     <a href="<?php $this->permalink() ?>">
                         <p>
-                        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" src="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" style="display: block;">
+                        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" style="display: block;">
                         </p>
                     </a>
                     <div class="info-mask">
@@ -87,7 +87,7 @@
         <?php endif; ?>
 
         <nav class="pagination" role="navigation">			
-			<?php $this->pageNav('上一页','下一页',10,'...');?>  					       		
+			<?php $this->pageNav('上一页','下一页',5,'...');?>  					       		
 		</nav>
         
         <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=50')->to($tags); ?>
