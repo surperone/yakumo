@@ -2,7 +2,7 @@
 
 <body class="post-template">
 
-	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "https://cdn.bayun.org/yakumo/header.jpg";} ?>" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url()">		
+	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover">		
     	<div class="nav-header">
             <div class="nav-header-container">
                  <a href="<?php $this->options->siteUrl(); ?>" class="back-home">首页</a>
@@ -55,8 +55,60 @@
 			            <p>扫描二维码 分享此文章</p>
 			        </div>
 	     		</div>
-	    	</section>				       
+	    	</section>
+	    	
+				<?php if (!empty($this->options->authorAvatar)): ?>			     			
+				<section class="author">
+	                <figure class="author-image">
+	                    <a class="img" href="<?php $this->author->permalink(); ?>" style="background-image: url(<?php $this->options->authorAvatar(); ?>)"><span class="hide"><?php $this->author(); ?></span></a>
+	                </figure>               
+	                <section class="author-detail">
+	                    <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>        
+	                </section>
+	            </section>	
+
+			    <?php endif; ?>
+
 	    </article>
+	    <section class="share">
+            <div class="share-icons" id="share-icons">
+            	<?php if (!empty($this->options->weibo)): ?>	
+               	<a class="icon-share" target="_blank" href="<?php $this->options->weibo(); ?>">
+                    <span class=""><i class="iconfont iconfont-weibo">&#xe712;</i></span>
+                </a>
+                <?php endif; ?>
+
+                <?php if (!empty($this->options->zhihu)): ?>	
+                <a class="icon-share" target="_blank" href="<?php $this->options->zhihu(); ?>">
+                    <span class=""><i class="iconfont iconfont-zhihu">&#xe704;</i></span>
+                </a>
+                <?php endif; ?>
+
+                <?php if (!empty($this->options->douban)): ?>	
+                <a class="icon-share" target="_blank" href="<?php $this->options->douban(); ?>">
+                    <span class=""><i class="iconfont iconfont-douban">&#xe711;</i></span>
+                </a>
+                <?php endif; ?>
+
+                <?php if (!empty($this->options->github)): ?>	
+                <a class="icon-share" target="_blank" href="<?php $this->options->github(); ?>">
+                    <span class=""><i class="iconfont iconfont-github">&#xe710;</i></span>
+                </a>
+                <?php endif; ?>
+
+                <?php if (!empty($this->options->facebook)): ?>	
+                <a class="icon-share" target="_blank" href="<?php $this->options->facebook(); ?>">
+                    <span class=""><i class="iconfont iconfont-facebook">&#xe708;</i></span>
+                </a>
+                <?php endif; ?>
+
+                <?php if (!empty($this->options->twitter)): ?>	
+                <a class="icon-share" target="_blank" href="<?php $this->options->twitter(); ?>">
+                    <span class=""><i class="iconfont iconfont-twitter">&#xe701;</i></span>
+                </a>
+                <?php endif; ?>
+            </div>
+        </section>
 		<?php $this->need('comments.php'); ?>
 	</main>
 
@@ -64,24 +116,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('fancybox/jquery.fancybox.css'); ?>"/>
 	<script type="text/javascript" src="<?php $this->options->themeUrl('fancybox/jquery.fancybox.pack.js'); ?>"></script>
 
-
-	<!-- 打赏按钮 -->
-	<script type="text/javascript">
-        $(".money-like .reward-button").hover(function() {
-            $(".money-code").fadeIn(),
-            $(this).addClass("active")
-        },
-        function() {
-            $(".money-code").fadeOut(),
-            $(this).removeClass("active")
-        },
-        800)
-	</script>
-
 	<!-- fancybox -->
 	<script>
-	    $("main img").parent("a").addClass("fancybox");
-	    $("main img").parent("a").attr("rel","gallery-group");
 	    $(document).ready(function() {
 	        $('.fancybox').fancybox();
 	    });

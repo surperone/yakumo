@@ -1,8 +1,6 @@
 <?php $this->need('header.php'); ?>
-
 <body class="tag-template">
-
-    <header id="header" data-url="https://cdn.bayun.org/yakumo/header.jpg" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url()">
+    <header id="header" data-url="<?php $this->options->themeUrl('img/header.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover">
             <div class="nav-header-container">
                 <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
                     <span class="svg-logo"> 
@@ -25,7 +23,6 @@
             </div>
         </div>
     </header>
-
     <main class="content" id="main" role="main">
         <?php if ($this->have()): ?>
         <?php while($this->next()): ?>
@@ -77,19 +74,15 @@
                     </div>
                 </div>
             </article>
-
         <?php endwhile; ?>
-
         <?php else: ?>
             <article class="post">
                 <h2 class="post-title"><?php _e('没有找到内容'); ?></h2>
             </article>
         <?php endif; ?>
-
         <nav class="pagination" role="navigation">			
 			<?php $this->pageNav('上一页','下一页',5,'...');?>  					       		
-		</nav>
-        
+		</nav>       
         <?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=50')->to($tags); ?>
         <div class="widget widget-tag-cloud">
             <div class="all-tags-block">                
@@ -99,5 +92,4 @@
             </div>
         </div> 
     </main>
-
     <?php $this->need('footer.php'); ?>

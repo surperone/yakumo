@@ -3,8 +3,7 @@
 <head>
     <meta charset="<?php $this->options->charset(); ?>" />
 	<meta name="viewport" content="width=device-width,user-scalable=no">
-     <?php if ($this->is('post')) : ?>
-
+    <?php if ($this->is('post')) : ?>
     <meta property="og:type" content="article"/>
     <meta property="article:published_time" content="<?php $this->date('c'); ?>"/>
     <meta property="article:author" content="<?php $this->author(); ?>" />
@@ -27,7 +26,6 @@
             font-weight: 100;
             src: local('Exo Thin'), local('Exo-Thin'), url(<?php $this->options->themeUrl('fonts/Thin.woff'); ?>) format('woff');
         }
-
         @font-face {
             font-family: 'Exo';
             font-style: normal;

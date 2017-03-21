@@ -4,14 +4,13 @@
 	* @package Yakumo
 	* @author 八云酱
 	* @version 1.0.0
-	* @link https://www.bayun.org
+	* @link http://www.bayun.org
 	*/
 	$this->need('header.php');
 ?>
 
 <body class="home-template">
-
-	<header id="header" data-url="https://cdn.bayun.org/yakumo/header.jpg" class="home-header blog-background banner-mask lazy no-cover" style="display: table; background-image: url()">
+	<header id="header" data-url="<?php $this->options->themeUrl('img/header.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover">
 	        <div class="nav-header-container">
 	            <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
 	                <span class="svg-logo"> 
@@ -29,7 +28,7 @@
                     	<?php $pages->title(); ?>
                     </a>
                     <?php endwhile; ?>
-                    <a style="color:#fff" href="https://www.bayun.org" target="_blank">八云酱</a>
+                    <a style="color:#fff" href="http://www.bayun.org" target="_blank">八云酱</a>
 				</h4>
 	        </div>
 	        <div class="arrow_down" data-offset="-45">
@@ -37,7 +36,6 @@
 	        </div>
 	    </div>
 	</header>
-
 	<main id="main" class="content homepage" role="main">
 		<?php while($this->next()): ?>
 			<article class="post-in-list post">
@@ -67,7 +65,6 @@
 						</div>
 					</div>
 			    </section>
-
 			    <div class="post-excerpt-mirror">
 			    	<div class="post-excerpt-mirror-mask">
 			    	<a href="<?php $this->permalink() ?>"><p></p></a>
@@ -88,17 +85,11 @@
 			    		</div>
 			    	</div>
 			    </div>
-
-
 			</article>
-
 		<?php endwhile; ?>
-
 		<nav class="pagination" role="navigation">			
 			<?php $this->pageNav('上一页','下一页',5,'...');?>  					       		
 		</nav>
-
-
 		<?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=50')->to($tags); ?>
 		<div class="widget widget-tag-cloud">
 			<div class="all-tags-block">				
@@ -107,7 +98,5 @@
 				<?php endwhile; ?>
 			</div>
 		</div>
-
 	</main>
-
 	<?php $this->need('footer.php'); ?>

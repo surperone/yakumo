@@ -1462,10 +1462,13 @@ to {
 	color:#363636
 }
 .iconfont.undefined {
-	display:none!important
+	color:#78cdd1
+}
+.iconfont-default {
+	color:#65c294
 }
 .iconfont-bayun {
-	color:#176dee
+	color:#65c294
 }
 .iconfont-weibo {
 	color:#e6162d
@@ -1529,6 +1532,10 @@ to {
 .single-post-inner .iconfont-bayun:before { content: "\e702"; }
 
 .single-post-inner .iconfont-twitter:before { content: "\e701"; }
+
+.single-post-inner .iconfont-default:before { content: "\e700"; }
+
+.single-post-inner .undefined:before { content: "\e700"; }
 
 .yasuko-only #ds-reset .ds-avatar img {
 	width:54px;
