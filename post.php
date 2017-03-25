@@ -2,7 +2,7 @@
 
 <body class="post-template">
 
-	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover">		
+	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "https://cdn.bayun.org/yakumo/image/header.jpg";} ?>" class="home-header blog-background banner-mask lazy no-cover">		
     	<div class="nav-header">
             <div class="nav-header-container">
                  <a href="<?php $this->options->siteUrl(); ?>" class="back-home">首页</a>
@@ -38,12 +38,12 @@
 			            	<span class="money-code">
 				           		<span class="alipay-code">
 					                <a href="javascript:;">
-					                	<img src="<?php $this->options->themeUrl('img/alipay.png'); ?>"><b>支付宝打赏</b>
+					                	<img src="https://cdn.bayun.org/yakumo/image/alipay.png"><b>支付宝打赏</b>
 					                </a>
 				           		</span>
 					            <span class="wechat-code">
 					            	<a href="javascript:;">
-					                	<img src="<?php $this->options->themeUrl('img/wechat.png'); ?>"><b>微信打赏</b>
+					                	<img src="https://cdn.bayun.org/yakumo/image/wechat.png"><b>微信打赏</b>
 					                </a>
 					            </span>
 					        </span>
@@ -112,11 +112,10 @@
 		<?php $this->need('comments.php'); ?>
 	</main>
 
-	<script type="text/javascript" src="<?php $this->options->themeUrl('js/prism.js'); ?>"></script>
-	<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('fancybox/jquery.fancybox.css'); ?>"/>
-	<script type="text/javascript" src="<?php $this->options->themeUrl('fancybox/jquery.fancybox.pack.js'); ?>"></script>
+	<script type="text/javascript" src="https://cdn.bayun.org/yakumo/js/prism.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.bayun.org/yakumo/fancybox/jquery.fancybox.css"/>
+	<script type="text/javascript" src="https://cdn.bayun.org/yakumo/fancybox/jquery.fancybox.pack.js"></script>
 
-	<!-- fancybox -->
 	<script>
 	    $(document).ready(function() {
 	        $('.fancybox').fancybox();

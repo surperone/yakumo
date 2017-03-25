@@ -18,22 +18,21 @@
             'tag'       =>  _t('标签「%s」'),
             'author'    =>  _t('作者「%s」')
         ), '', ' '); ?><?php $this->options->title(); ?></title>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/all.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.bayun.org/yakumo/css/all.min.css">
     <style type="text/css">
         @font-face {
             font-family: 'Exo';
             font-style: normal;
             font-weight: 100;
-            src: local('Exo Thin'), local('Exo-Thin'), url(<?php $this->options->themeUrl('fonts/Thin.woff'); ?>) format('woff');
+            src: local('Exo Thin'), local('Exo-Thin'), url(https://cdn.bayun.org/yakumo/fonts/Thin.woff) format('woff');
         }
         @font-face {
             font-family: 'Exo';
             font-style: normal;
             font-weight: 400;
-            src: local('Exo Regular'), local('Exo-Regular'), url(<?php $this->options->themeUrl('fonts/Regular.woff'); ?>) format('woff');
+            src: local('Exo Regular'), local('Exo-Regular'), url(https://cdn.bayun.org/yakumo/fonts/Regular.woff) format('woff');
         }
     </style>
-    <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.js'); ?>"></script>
-    <script type="text/javascript" src="<?php $this->options->themeUrl('js/all.js'); ?>"></script>
+    <script type="text/javascript" src="https://cdn.bayun.org/yakumo/js/jquery.js"></script>  
     <?php $this->header("generator=&template=&"); ?>
 </head>

@@ -1,20 +1,20 @@
 <?php
 /**
-	* Yakumo 八云酱出品
+	* 八云酱后宫群 386439328
 	* @package Yakumo
 	* @author 八云酱
 	* @version 1.0.0
-	* @link http://www.bayun.org
+	* @link https://www.bayun.org
 	*/
 	$this->need('header.php');
 ?>
 
 <body class="home-template">
-	<header id="header" data-url="<?php $this->options->themeUrl('img/header.jpg'); ?>" class="home-header blog-background banner-mask lazy no-cover">
+	<header id="header" data-url="https://cdn.bayun.org/yakumo/image/header.jpg" class="home-header blog-background banner-mask lazy no-cover">
 	        <div class="nav-header-container">
 	            <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
 	                <span class="svg-logo"> 
-	                    <img src="<?php $this->options->themeUrl('img/logo.png'); ?>" style="width: 50px;height: 50px;">       
+	                    <img src="https://cdn.bayun.org/yakumo/image/logo.png" style="width: 50px;height: 50px;">       
 	                </span>
 	            </a>
 	        </div>
@@ -28,7 +28,6 @@
                     	<?php $pages->title(); ?>
                     </a>
                     <?php endwhile; ?>
-                    <a style="color:#fff" href="http://www.bayun.org" target="_blank">八云酱</a>
 				</h4>
 	        </div>
 	        <div class="arrow_down" data-offset="-45">
@@ -43,7 +42,7 @@
 			    <section class="post-excerpt">
 				    <a href="<?php $this->permalink() ?>">
 				        <p>
-				        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('img/header.jpg');} ?>" style="display: block;">
+				        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "https://cdn.bayun.org/yakumo/image/header.jpg";} ?>" style="display: block;">
 				        </p>
 				    </a>
 				    <div class="info-mask">
@@ -88,7 +87,7 @@
 			</article>
 		<?php endwhile; ?>
 		<nav class="pagination" role="navigation">			
-			<?php $this->pageNav('上一页','下一页',5,'...');?>  					       		
+			<?php $this->pageNav('上一页','下一页',1,'...');?>  					       		
 		</nav>
 		<?php $this->widget('Widget_Metas_Tag_Cloud', 'ignoreZeroCount=1&limit=50')->to($tags); ?>
 		<div class="widget widget-tag-cloud">
