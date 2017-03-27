@@ -17,7 +17,7 @@
             position: fixed
         }
     </style>
-    <script type="text/javascript" src="https://cdn.bayun.org/yakumo/js/rainday.js"></script>
+    <script type="text/javascript" src="https://bayun.b0.upaiyun.com/yakumo/js/rainday.js"></script>
     <script>
 		function run() {
 			var image = document.getElementById('background');
@@ -29,7 +29,7 @@
 				engine.rain([ [1, 0, 10], [1, 5, 1] ], 50);
 			};
 			image.crossOrigin = 'anonymous';
-        	image.src = 'https://cdn.bayun.org/yakumo/image/header.jpg';
+        	image.src = 'https://bayun.b0.upaiyun.com/yakumo/image/header.jpg';
         }
 	</script>
 </head>

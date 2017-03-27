@@ -1,10 +1,10 @@
 <?php $this->need('header.php'); ?>
 <body class="tag-template">
-    <header id="header" data-url="https://cdn.bayun.org/yakumo/image/header.jpg" class="home-header blog-background banner-mask lazy no-cover">
+    <header id="header" data-url="https://bayun.b0.upaiyun.com/yakumo/image/header.jpg" class="home-header blog-background banner-mask lazy no-cover">
             <div class="nav-header-container">
                 <a href="<?php $this->options->siteUrl(); ?>" class="svg-logo" target="_blank">
                     <span class="svg-logo"> 
-                        <img src="https://cdn.bayun.org/yakumo/image/logo.png" style="width: 50px;height: 50px;">       
+                        <img src="https://bayun.b0.upaiyun.com/yakumo/image/logo.png" style="width: 50px;height: 50px;">       
                     </span>
                 </a>
             </div>
@@ -30,7 +30,7 @@
                 <section class="post-excerpt">
                     <a href="<?php $this->permalink() ?>">
                         <p>
-                        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "https://cdn.bayun.org/yakumo/image/header.jpg";} ?>" style="display: block;">
+                        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "https://bayun.b0.upaiyun.com/yakumo/image/header.jpg";} ?>" style="display: block;">
                         </p>
                     </a>
                     <div class="info-mask">
