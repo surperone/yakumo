@@ -6,15 +6,6 @@
 	<?php $this->footer(); ?>
 	<script type="text/javascript" src="https://bayun.b0.upaiyun.com/yakumo/js/all.min.js"></script>
 	<script>
-	var _hmt = _hmt || [];
-	(function() {
-		var hm = document.createElement("script");
-		hm.src = "https://hm.baidu.com/hm.js?6a9f4ea527d6744269338a7714923558";
-		var s = document.getElementsByTagName("script")[0]; 
-		s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
-	<script>
 	(function(){
 	    var bp = document.createElement('script');
 	    var curProtocol = window.location.protocol.split(':')[0];
