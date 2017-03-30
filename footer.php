@@ -1,10 +1,10 @@
 	<footer class="site-footer clearfix ">
 	    <section class="copyright "><b><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a> &copy; <?php echo date("Y"); ?></b></section>        
-        <section><b>京ICP备16042939号</b></section>    
-        <a href="https://www.upyun.com" target="_blank"><img style="max-width:75px;max-height:15px" src="https://bayun.b0.upaiyun.com/yakumo/image/upyun.png"></a>  
+        <section><b>主题作者 <a href="https://www.bayun.org" target="_blank">八云酱</a></b></section>    
+        <a href="https://www.upyun.com" target="_blank"><img style="max-width:75px;max-height:15px" src="<?php $this->options->themeUrl('image/upyun.png'); ?>"></a>  
 	</footer>  
 	<?php $this->footer(); ?>
-	<script type="text/javascript" src="https://bayun.b0.upaiyun.com/yakumo/js/all.min.js"></script>
+	<script type="text/javascript" src="<?php $this->options->themeUrl('js/all.min.js'); ?>"></script>
 	<script>
 	(function(){
 	    var bp = document.createElement('script');
