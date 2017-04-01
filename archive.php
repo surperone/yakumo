@@ -30,7 +30,7 @@
                 <section class="post-excerpt">
                     <a href="<?php $this->permalink() ?>">
                         <p>
-                        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "<?php $this->options->themeUrl('image/header.jpg'); ?>";} ?>" style="display: block;">
+                        <img class="lazy" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('image/header.jpg');} ?>" style="display: block;">
                         </p>
                     </a>
                     <div class="info-mask">
