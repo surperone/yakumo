@@ -2,7 +2,7 @@
 
 <body class="post-template">
 
-	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{echo "<?php $this->options->themeUrl('image/header.jpg'); ?>";} ?>" class="home-header blog-background banner-mask lazy no-cover">		
+	<header id="header" data-url="<?php if(isset($this->fields->cover)){$this->fields->cover();}else{$this->options->themeUrl('image/header.jpg');} ?>" class="home-header blog-background banner-mask lazy no-cover">		
     	<div class="nav-header">
             <div class="nav-header-container">
                  <a href="<?php $this->options->siteUrl(); ?>" class="back-home">首页</a>
