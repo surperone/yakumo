@@ -1,7 +1,7 @@
 <?php
 /**
 	* 八云酱后宫群 386439328
-	* @package Yakumo
+	* @package yakumo
 	* @author 八云酱
 	* @version 1.0.0
 	* @link https://www.bayun.org
